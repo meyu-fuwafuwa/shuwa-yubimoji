@@ -73,10 +73,6 @@ a.btn {
 	transition: 0.5s;
 	width: 50%;
 }
-a.btn:hover {
-	color: #ffaf58;
-	background: #fff;
-}
 
 p{
 	margin-bottom: 20px;
