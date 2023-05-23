@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>手話・指文字練習</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="js/yubimoji-easy.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="wrap">
+			<div class="header-wrap">
+				<h1 class="site-title"><a href="index.html">手話・指文字練習</a></h1>
+			</div>
+		</div>
+	</header>
+	
+	<main id="yubimoji-easy">
+		<div class="wrap">
+			<section id="start">
+				<h2 class="sec-title">指文字かんたん</h2>
+				<p>
+					4つの選択肢の中から正しいものを選んでください。
+				</p>
+				<a href="javascript:start();" class="btn">スタート</a>
+			</section>
+			<section id="question" class="display-none">
+				<h2 class="sec-title" id="q-h2">指文字かんたん：Q1</h2>
+				<p>指文字で表現しているものを選んでください。</p>
+				<div id="q-img" class="q-flexbox">
+					<div class="q-item"><img src="img/あ.png" alt=""></div>
+					<div class="q-item"><img src="img/あ.png" alt=""></div>
+					<div class="q-item"><img src="img/あ.png" alt=""></div>
+				</div>
+				<ul id ="a-list">
+					<li><a href="#" class="btn">***</a></li>
+					<li><a href="#" class="btn">***</a></li>
+					<li><a href="#" class="btn">***</a></li>
+					<li><a href="#" class="btn">***</a></li>
+				</ul>
+			</section>
+			<section id="result" class="display-none">
+				<h2 class="sec-title">結果発表</h2>
+				<p id="r-msg">あなたの結果は<span>XXXX</span>でした。</p>
+				<table id="r-table">
+					<tr>
+						<th>番号</th><th>問題</th><th>正誤</th>	
+					</tr>
+					<tr>
+						<td>1</td><td>てすと</td><td>○</td>	
+					</tr>
+				</table>
+				<a href="yubimoji-easy.html" class="btn">最初に戻る</a>
+			</section>
+		</div>
+	</main>
+	
+	<footer>
+		<p>2023 MeiHashimoto</p>
+	</footer>
+</body>
+</html>

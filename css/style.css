@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	border-style: none;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-size: 1.6rem;
+	color: #333;
+	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", "sans-serif";
+	/*フッターを一番下にするためのcss*/
+	display: flex;
+	flex-flow: column;
+	min-height: 100vh;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+a{
+	color: #333;
+}
+
+a:hover{
+	opacity: 0.7;
+	transition: 0.5s;
+}
+
+.wrap{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 900px;
+	padding: 0 10px;
+}
+
+section{
+	margin-bottom: 50px;
+}
+.sec-title{
+	font-size: 2.4rem;
+	padding: 10px;/*文字周りの余白*/
+  	border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+	margin-bottom: 20px;
+}
+
+
+a.btn {
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	margin:0 auto 20px;
+	padding: 20px 40px;
+	font-weight: bold;
+	border: 2px solid #ffaf58;
+	background: #ffaf58;
+	border-radius: 10px;
+	transition: 0.5s;
+	width: 50%;
+}
+a.btn:hover {
+	color: #ffaf58;
+	background: #fff;
+}
+
+p{
+	margin-bottom: 20px;
+}
+
+.display-none{
+	display: none;
+}
+
+/*************************************************/
+/*header*/
+/*************************************************/
+header{
+	background-color: #333;
+	color: #fff;
+	padding:20px;
+	margin-bottom: 50px;
+	border-bottom: solid 5px #ffaf58;
+}
+header a{
+	color: #fff;
+}
+.site-title{
+	font-size: 3.2rem;
+}
+
+/*************************************************/
+/*footer*/
+/*************************************************/
+footer p{
+	padding: 10px;
+	text-align: center;
+	background-color: #333;
+	color: #fff;
+}
+
+/*main*/
+main{
+	/*フッターを一番下にするためのcss*/
+	flex: 1;
+}
+
+/*************************************************/
+/*yubimoji-easy*/
+/*************************************************/
+#yubimoji-easy .q-flexbox{
+	display: flex;
+	margin-bottom: 20px;
+}
+#yubimoji-easy .q-item{
+	flex: 1;
+}
+
+#r-table{
+	margin: 0 auto;
+	background-color: #ffaf58;
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+
+#r-table th, #r-table td{
+	padding: 10px 20px;
+	border-bottom: 2px solid #333;
+	border-right: 2px solid #333;
+}
+#r-table tr{
+	border-left: 2px solid #333;
+}
+#r-table tr:first-child{
+	border-top: 2px solid #333;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 750px){
+	a.btn {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
