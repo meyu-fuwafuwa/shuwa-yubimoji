@@ -5,7 +5,8 @@
 	<title>手話・指文字練習</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<script src="js/yubimoji-easy.js"></script>
+	<script src="js/yubimoji-hard.js"></script>
+	<script src="js/movie.js"></script>
 </head>
 
 <body>
@@ -20,20 +21,19 @@
 	<main id="yubimoji-easy">
 		<div class="wrap">
 			<section id="start">
-				<h2 class="sec-title">指文字かんたん</h2>
+				<h2 class="sec-title">指文字むずかしい</h2>
 				<p>
 					4つの選択肢の中から正しいものを選んでください。
 				</p>
 				<a href="javascript:start();" class="btn">スタート</a>
 			</section>
 			<section id="question" class="display-none">
-				<h2 class="sec-title" id="q-h2">指文字かんたん：Q1</h2>
+				<h2 class="sec-title" id="q-h2">指文字むずかしい：Q1</h2>
 				<p>4つの選択肢の中から正しいものを選んでください。</p>
-				<div id="q-img" class="q-flexbox">
-					<div class="q-item"><img src="img/あ.png" alt=""></div>
-					<div class="q-item"><img src="img/あ.png" alt=""></div>
-					<div class="q-item"><img src="img/あ.png" alt=""></div>
+				<div id="q-video">
+					<video src="./movie-yubimoji-hard/テスト.mp4" autoplay muted loop></video>
 				</div>
+				
 				<ul id ="a-list">
 					<li><a href="#" class="btn">***</a></li>
 					<li><a href="#" class="btn">***</a></li>
@@ -52,7 +52,7 @@
 						<td>1</td><td>てすと</td><td>○</td>	
 					</tr>
 				</table>
-				<a href="yubimoji-easy.html" class="btn">最初に戻る</a>
+				<a href="yubimoji-hard.html" class="btn">最初に戻る</a>
 			</section>
 		</div>
 	</main>

@@ -1,26 +1,11 @@
 // JavaScript Document
 
-let data = new Array();
-data.push(["あいうえお","かきくけこ","さしすせそ","たちつてと"]);
-data.push(["りんご","いんこ","はんこ","あんこ"]);
-data.push(["いちご","れもん","めろん","とまと"]);
-data.push(["ひょうご","おおさか","きょうと","わかやま"]);
-data.push(["やさい","やかん","やまと","やすり"]);
-data.push(["げつようび","すいようび","もくようび","きんようび"]);
-data.push(["らーめん","かーてん","あーめん","まーりん"]);
-data.push(["はっぱ","らっぱ","かっぱ","りっぱ"]);
-data.push(["だんご","さんご","かんご","ろんご"]);
-data.push(["かっこ","いっこ","らっこ","ねっこ"]);
-data.push(["まかろに","あんぱん","おおざら","からあげ"]);
-data.push(["りんご","りぼん","りずむ","りんす"]);
-data.push(["れんこん","れんらく","れんけい","れんしゅう"]);
-data.push(["かんたん","かいしゃ","かっこう","かけざん"]);
-data.push(["れいぞうこ","ふせいかい","れんしゅう","ふくしゅう"]);
 
-let max = 10; //問題数
+let max = 1; //問題数
 let count; //現在の問題番号(0～max)
 let point = 0; //正解数
 
+//時間計測用
 let startTime;
 let endTime;
 
@@ -67,13 +52,10 @@ questionSet
 function questionSet(){
 	document.getElementById('q-h2').textContent = "Q" + (count+1);
 	let word = data[question[count]][ans[count]];
-	let arraySplit = word.split('');
 	
 	let msg = "";
-	for(let i=0; i<arraySplit.length; i++){
-		msg = msg +  "<div class='q-item'><img src='img/"+arraySplit[i]+".png' alt=''></div>";
-	}
-	document.getElementById('q-img').innerHTML = msg;
+	msg = "<video src='./movie-yubimoji-hard/"+word+".mp4'  poster='読み込み中.jpg' autoplay muted loop></video>";
+	document.getElementById('q-video').innerHTML = msg;
 	
 	msg = "";
 	for(let i=0; i<data[question[count]].length; i++){
