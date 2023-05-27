@@ -54,7 +54,7 @@ function questionSet(){
 	let word = data[question[count]][ans[count]];
 	
 	let msg = "";
-	msg = "<video src='./movie-yubimoji-hard/"+word+".mp4'  poster='読み込み中.jpg' autoplay muted loop></video>";
+	msg = "<video src='./movie-yubimoji-hard/"+word+".mp4'  poster='読み込み中.jpg' playsinline autoplay muted loop></video>";
 	document.getElementById('q-video').innerHTML = msg;
 	
 	msg = "";
