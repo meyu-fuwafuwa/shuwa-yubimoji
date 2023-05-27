@@ -1,7 +1,7 @@
 // JavaScript Document
 
 
-let max = 1; //問題数
+let max = 2; //問題数
 let count; //現在の問題番号(0～max)
 let point = 0; //正解数
 
