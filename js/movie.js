@@ -39,8 +39,9 @@ start
 スタートボタン押下
 *************************************/
 function start(){
-	document.getElementById('start').classList.add("display-none");
-	document.getElementById('question').classList.remove("display-none");
+	$('#start').fadeOut(500,function(){	
+		$('#question').fadeIn(500);
+	});
 	count = 0;
 	questionSet();
 	startTime = Date.now();
@@ -74,10 +75,14 @@ function Answer(yourans){
 	}
 	count++;
 	if(count < max){ // 問題がまだ続く
-	   questionSet();
+		$('#question').fadeOut(500,function(){
+			questionSet();
+			$('#question').fadeIn(500);
+		});
 	}else{ //問題終了。結果画面を出す。
-		document.getElementById('question').classList.add("display-none");
-		document.getElementById('result').classList.remove("display-none");
+		$('#question').fadeOut(500,function(){
+			$('#result').fadeIn(500);
+		});
 		endTime = Date.now();
 		
 		let msg = "";

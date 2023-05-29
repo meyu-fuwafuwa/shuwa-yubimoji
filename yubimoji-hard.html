@@ -6,22 +6,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="img/favicon.ico">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-3.7.0.min.js"></script>
+	<script src="js/pagemove.js"></script>
 	<script src="js/yubimoji-hard.js"></script>
 	<script src="js/movie.js"></script>
 </head>
 
-<body>
+<body onload="$('#start').fadeIn(500);">
 	<header>
 		<div class="wrap">
 			<div class="header-wrap">
-				<h1 class="site-title"><a href="index.html">手話・指文字練習</a></h1>
+				<h1 class="site-title"><a href="javascript:goToIndex();">手話・指文字練習</a></h1>
 			</div>
 		</div>
 	</header>
 	
 	<main id="yubimoji-easy">
 		<div class="wrap">
-			<section id="start">
+			<section id="start" class="display-none">
 				<h2 class="sec-title">指文字むずかしい</h2>
 				<p>
 					4つの選択肢の中から正しいものを選んでください。
@@ -53,14 +55,10 @@
 						<td>1</td><td>てすと</td><td>○</td>	
 					</tr>
 				</table>
-				<a href="yubimoji-hard.html" class="btn">もう一度挑戦する</a>
-				<a href="index.html" class="btn">最初に戻る</a>
+				<a href="javascript:goToYubimojiHard();" class="btn">もう一度挑戦する</a>
+				<a href="javascript:goToIndex();" class="btn">最初に戻る</a>
 			</section>
 		</div>
 	</main>
-	
-	<footer>
-		<p>2023 MeiHashimoto</p>
-	</footer>
 </body>
 </html>
