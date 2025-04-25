@@ -7,8 +7,9 @@
 	<link rel="icon" href="img/favicon.ico">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<script src="js/jquery-3.7.0.min.js"></script>
-	<script src="js/yubimoji-easy.js"></script>
 	<script src="js/pagemove.js"></script>
+	<script src="js/number.js"></script>
+	<script src="js/movie-number.js"></script>
 </head>
 
 <body onload="$('#start').fadeIn(500);">
@@ -23,20 +24,19 @@
 	<main id="yubimoji-easy">
 		<div class="wrap">
 			<section id="start" class="display-none">
-				<h2 class="sec-title">指文字かんたん</h2>
+				<h2 class="sec-title">数字</h2>
 				<p>
 					4つの選択肢の中から正しいものを選んでください。
 				</p>
 				<a href="javascript:start();" class="btn">スタート</a>
 			</section>
 			<section id="question" class="display-none">
-				<h2 class="sec-title" id="q-h2">指文字かんたん：Q1</h2>
+				<h2 class="sec-title" id="q-h2">数字：Q1</h2>
 				<p>4つの選択肢の中から正しいものを選んでください。</p>
-				<div id="q-img" class="q-flexbox">
-					<div class="q-item"><img src="img/あ.png" alt=""></div>
-					<div class="q-item"><img src="img/あ.png" alt=""></div>
-					<div class="q-item"><img src="img/あ.png" alt=""></div>
+				<div id="q-video">
+					<video src="./movie-yubimoji-hard/テスト.mp4" autoplay muted loop></video>
 				</div>
+				
 				<ul id ="a-list">
 					<li><a href="#" class="btn">***</a></li>
 					<li><a href="#" class="btn">***</a></li>
@@ -55,12 +55,11 @@
 						<td>1</td><td>てすと</td><td>○</td>	
 					</tr>
 				</table>
-				<a href="javascript:goToYubimojiEasy();" class="btn">もう一度挑戦する</a>
+				<a href="javascript:goToNumber();" class="btn">もう一度挑戦する</a>
 				<a href="javascript:goToIndex();" class="btn">クイズトップに戻る</a>
 				<a href="https://fukuimei-shuwa.studio.site/" class="btn">はじめての手話<br>サイトトップ</a>
 			</section>
 		</div>
 	</main>
-
 </body>
 </html>
