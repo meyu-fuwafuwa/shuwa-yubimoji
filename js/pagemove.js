@@ -15,3 +15,8 @@
 				location.href = 'yubimoji-hard.html';
 			});
 		}
+		function goToNumber(){
+			$('main').fadeOut(500,function(){
+				location.href = 'number.html';
+			});
+		}
