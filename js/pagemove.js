@@ -20,3 +20,13 @@
 				location.href = 'number.html';
 			});
 		}
+		function goToShuwa1(){
+			$('main').fadeOut(500,function(){
+				location.href = 'shuwa1.html';
+			});
+		}
+		function goToShuwa2(){
+			$('main').fadeOut(500,function(){
+				location.href = 'shuwa2.html';
+			});
+		}
