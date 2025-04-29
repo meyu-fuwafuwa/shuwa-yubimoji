@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>手話・指文字練習</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon.ico">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-3.7.0.min.js"></script>
+	<script src="js/pagemove.js"></script>
+	<script src="js/movie-shuwa1.js"></script>
+</head>
+
+<body onload="$('#start').fadeIn(500);">
+	<header>
+		<div class="wrap">
+			<div class="header-wrap">
+				<h1 class="site-title"><a href="javascript:goToIndex();">手話・指文字練習</a></h1>
+			</div>
+		</div>
+	</header>
+	
+	<main id="yubimoji-easy">
+		<div class="wrap">
+			<section id="start" class="display-none">
+				<h2 class="sec-title">基本の手話１</h2>
+				<p>
+					4つの選択肢の中から正しいものを選んでください。
+				</p>
+				<a href="javascript:start();" class="btn">スタート</a>
+			</section>
+			<section id="question" class="display-none">
+				<h2 class="sec-title" id="q-h2">基本の手話１：Q1</h2>
+				<p>4つの選択肢の中から正しいものを選んでください。</p>
+				<div id="q-video">
+					<video src="./movie-shuwa1/テスト.mp4" autoplay muted loop></video>
+				</div>
+				
+				<ul id ="a-list">
+					<li><a href="#" class="btn">***</a></li>
+					<li><a href="#" class="btn">***</a></li>
+					<li><a href="#" class="btn">***</a></li>
+					<li><a href="#" class="btn">***</a></li>
+				</ul>
+			</section>
+			<section id="result" class="display-none">
+				<h2 class="sec-title">結果発表</h2>
+				<p id="r-msg">あなたの結果は<span>XXXX</span>でした。</p>
+				<table id="r-table">
+					<tr>
+						<th>番号</th><th>問題</th><th>正誤</th>	
+					</tr>
+					<tr>
+						<td>1</td><td>てすと</td><td>○</td>	
+					</tr>
+				</table>
+				<a href="javascript:goToShuwa1();" class="btn">もう一度挑戦する</a>
+				<a href="javascript:goToIndex();" class="btn">クイズトップに戻る</a>
+				<a href="https://fukuimei-shuwa.studio.site/" class="btn">はじめての手話<br>サイトトップ</a>
+			</section>
+		</div>
+	</main>
+</body>
+</html>
